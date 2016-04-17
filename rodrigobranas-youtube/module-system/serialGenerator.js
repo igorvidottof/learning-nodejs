@@ -9,29 +9,29 @@ module.exports.generate = function() {
 };
 
 // Possible ways to do the same action
-/*
-exports.generate ...
-this.generate ...  
-*/
+exports.generate = function() {
+  return Math.floor(Math.random() * max);
+};
+
+this.generate  = function() {
+  return Math.floor(Math.random() * max);
+};
+
 
 // Exporting through an object 
-/*
-
 var generate = function() {
   return Math.floor(Math.random() * max);
 };
 
 module.exports = {
   generate: generate
-}
+};
 
-*/
 
 /*It's also possible to export a module through patterns, 
 such as Factory Function and Constructor Function*/
 
 //Factory Function
-/*
 var createSerialGenerator = function() {
   var max = 10000;
 
@@ -45,10 +45,9 @@ var createSerialGenerator = function() {
 };
 
 module.exports = createSerialGenerator();
-*/
+
 
 //Constructor Function
-/*
 var SerialGenerator = function() {
   var max = 10000;
 
@@ -58,4 +57,4 @@ var SerialGenerator = function() {
 };
 
 module.exports = new SerialGenerator();
-*/
+
