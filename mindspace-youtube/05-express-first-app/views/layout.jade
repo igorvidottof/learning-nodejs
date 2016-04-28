@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    // tag= variable from routes/index.js in this case
+    title= title 
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    ul 
+      li My text
+    form(method=post)
+      input(type='text' autofocus required).class-name#anyid
+      input(type='submit')
+    
+    // defining a local variable
+    - var isTrue = true
+
+    // making a condition
+    if isTrue
+      p It's true
+    
+    // creating loops
+    - var anyArray = [1,2,3]
+    each value in anyArray
+      p= value
+
+    block content
