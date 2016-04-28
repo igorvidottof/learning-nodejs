@@ -1,0 +1,16 @@
+<h1>{{ title }}</h1>
+<p>Welcome to {{ title }}</p>
+
+{{!-- Creating blocks of code on handlebars --}}
+{{#if condition}} {{!-- condition is a variable from index.js --}}
+  Condition is met
+}
+{{else}}
+  Condition not met
+{{/if}}
+
+{{!-- for loop --}}
+{{#each anyArray as |val key|}} {{!-- anyArray is a variable from index.js --}}
+  {{!-- {{ this }} output the current value --}}
+  {{ key }} = {{ val }}
+{{/each}}
