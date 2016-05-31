@@ -1,0 +1,17 @@
+{
+  "name": "nedb-lab",
+  "version": "1.0.0",
+  "description": "testes",
+  "main": "app.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "keywords": [
+    "nedb"
+  ],
+  "author": "igor",
+  "license": "ISC",
+  "dependencies": {
+    "nedb": "^1.8.0"
+  }
+}
