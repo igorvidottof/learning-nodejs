@@ -14,3 +14,6 @@ console.log(tenDaysAgo.format('L'));
 
 console.log(tenDaysAhead.isSameOrAfter(now));
 console.log(tenDaysAgo.isSameOrBefore(now));
+
+// locales
+console.log(moment().locale('pt-BR'));
